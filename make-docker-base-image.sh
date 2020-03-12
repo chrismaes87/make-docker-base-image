@@ -5,10 +5,11 @@
 # inspired from https://github.com/moby/moby/blob/master/contrib/mkimage-yum.sh
 
 set -e
+me=$(basename $0)
 
 usage() {
     cat <<EOOPTS
-$(basename $0) [OPTIONS] <name[:version]>
+$me [OPTIONS] <name[:version]>
 
 SYNOPSIS
     Create an image from scratch with certain packages installed.
